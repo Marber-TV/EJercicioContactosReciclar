@@ -1,6 +1,8 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id ("kotlin-parcelize")
+
 }
 
 android {
@@ -42,8 +44,8 @@ android {
 
 dependencies {
 
+    implementation ("com.google.android.gms:play-services-maps:18.0.1")
     implementation ("com.github.bumptech.glide:glide:4.16.0")
-
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.9.0")
